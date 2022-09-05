@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html >
+<html dir="ltr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,19 +8,45 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <nav>
-            <label class="logo">Trang Chủ</label>
+            <label class="logo"><i class="fa-solid fa-ghost"></i></label>
             <ul>
-                <li><a href="#">Trang 1</a></li>
-                <li><a href="#">Trang 2</a></li>
-                <li><a href="#">Vô hiệu</a></li>
-                <li><a href="#">Trang 3</a></li>
-                <li><a href="#">Trang 4</a></li>
+                <li><a class="active" href="#">Trang Chủ</a></li>
+                <li><a  href="#">Trang 2</a></li>
+                <li><a class="disabled" href="#">Vô hiệu</a></li>
+                <li><a  href="#">Trang 3</a></li>
+                <li><a  href="#">Trang 4</a></li>
             </ul>
         </nav>
-        
+
+        <div class="card">
+            <div class="form-card">
+                <label for="">Nhập Email</label><br>
+                <input type="text" id="email" name="email" value=""><br>
+                <input type="button" id="checkRgxEmail" value="Kiểm tra">
+            </div>
+            <div class="form-card">
+                <label for="">Nhập Tên của bạn (SetCookie)</label><br>
+                <input type="text" id="username"  value=""><br>
+                <input type="button" id="checkSetCookie" value="Xác nhận">
+            </div>
+            <div class="form-card">
+                <label for="">Nhập thông báo sẽ hiện sau 3 giây</label><br>
+                <input type="text" id="alert"  value=""><br>
+                <input type="button" id="getAlert" value="Xác nhận">
+            </div>
+        </div>
+        <div class="card">
+            <div class="form-card">
+                <input style="width:140px;" type="button" id="count" value="Đếm từ 1 đến 10">
+                <input disabled style="margin-left: 20px; width:20px;" type="text" id="number"  value=""><br>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script type="text/javascript" src="main.js"></script>
 
     </body>
